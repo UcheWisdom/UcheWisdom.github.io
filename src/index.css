@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a192f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #64ffda;
+    border-radius: 10px;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 py-20 md:px-16 lg:px-32;
+  }
+
+  .accent-text {
+    @apply text-accent font-mono text-sm;
+  }
+
+  .heading {
+    @apply text-3xl md:text-4xl font-bold text-textMain;
+  }
+}
