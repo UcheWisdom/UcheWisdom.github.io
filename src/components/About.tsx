@@ -108,7 +108,7 @@ function About() {
 
           {/* Right — Tech Icons Grid */}
           <div className="bg-secondary/50 border border-textDim/10 rounded-2xl p-6">
-              <div className="grid grid-cols-5 md:grid-cols-6 gap-4">
+              <div className="grid grid-cols-4 md:grid-cols-6 gap-3">
               {techIcons.map((tech, index) => (
                 <motion.div
                   key={tech.name}
@@ -120,7 +120,7 @@ function About() {
                   <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-8 h-8 group-hover:scale-125 transition-transform duration-200"
+                    className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-125 transition-transform duration-200"
                   />
                   <span className="text-textDim/60 text-xs font-mono text-center leading-tight">
                     {tech.name}

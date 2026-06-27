@@ -153,8 +153,10 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const visibleCount = 2;
+  const [windowWidth] = useState(window.innerWidth);
+  const visibleCount = windowWidth < 768 ? 1 : 2;
   const maxIndex = Math.max(projects.length - visibleCount, 0);
+  
 
   const handlePrev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
   const handleNext = () => setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
@@ -193,7 +195,7 @@ function Projects() {
           </button>
 
           {/* Cards */}
-          <div className="flex-1 grid grid-cols-2 gap-4">
+          <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
             {visibleProjects.map((project, index) => (
               <motion.div
                 key={project.id}

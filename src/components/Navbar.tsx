@@ -49,7 +49,7 @@ function Navbar() {
           alt="Uchebuaku Wisdom"
           className="w-8 h-8 rounded-full object-cover object-top border border-accent/40"
         />
-        <span className="font-sans text-textMain text-sm font-semibold">
+        <span className="font-sans text-textMain text-xs md:text-sm font-semibold">
           Uchebuaku Wisdom
         </span>
         </button>

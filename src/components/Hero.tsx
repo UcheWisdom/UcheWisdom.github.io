@@ -14,7 +14,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-textMain text-3xl md:text-4xl font-bold mb-1"
+            className="text-textMain text-2xl md:text-4xl font-bold mb-1"
           >
             Hi, I'm
           </motion.p>
@@ -23,7 +23,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-serif font-bold text-accent mb-3 leading-tight whitespace-nowrap text-4xl md:text-5xl"
+            className="font-serif font-bold text-accent mb-3 leading-tight text-3xl md:text-5xl"
           >
             Uchebuaku Wisdom
           </motion.h1>
@@ -32,7 +32,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-textMain font-semibold text-lg mb-8"
+            className="text-textMain font-semibold text-lg mb-6"
           >
             Full-Stack Software Engineer
           </motion.p>
@@ -41,7 +41,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-textDim text-base leading-relaxed mb-8 max-w-lg pr-8"
+            className="text-textDim text-base leading-relaxed mb-8 max-w-lg pr-4"
           >
             Full-Stack Software Engineer based in Nigeria with expertise in developing scalable, 
             reliable, and user-centric software solutions. Experienced in modern backend and frontend 
