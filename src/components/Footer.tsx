@@ -8,7 +8,8 @@ function Footer() {
         <span className="text-textDim/50 font-mono text-xs">
           · © {new Date().getFullYear()} · All Rights Reserved
         </span>
-      </div>    </footer>
+      </div>    
+    </footer>
   );
 }
 
