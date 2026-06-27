@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import type { NavLink } from "../types";
+import profileImg from "../assets/images/profile.jpg";
 
 const navLinks: NavLink[] = [
   { label: "About", target: "about" },
@@ -41,9 +42,16 @@ function Navbar() {
         {/* Logo */}
         <button
           onClick={() => scrollToSection("hero")}
-          className="font-sans text-accent text-lg font-bold hover:opacity-80 transition-opacity"
-        >
+          className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          >
+        <img
+          src={profileImg}
+          alt="Uchebuaku Wisdom"
+          className="w-8 h-8 rounded-full object-cover object-top border border-accent/40"
+        />
+        <span className="font-sans text-textMain text-sm font-semibold">
           Uchebuaku Wisdom
+        </span>
         </button>
 
         {/* Desktop Links */}

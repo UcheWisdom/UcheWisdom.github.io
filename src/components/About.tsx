@@ -60,10 +60,10 @@ const techIcons = [
 ];
 
 const stats = [
-  { icon: "⚡", value: "40%", label: "API Response Time Reduction" },
-  { icon: "🎯", value: "20%", label: "System Downtime Decrease" },
-  { icon: "⭐", value: "10K+", label: "Daily Transactions Handled" },
-  { icon: "</>", value: "50+", label: "Projects Completed" },
+  { icon: "💻", value: "20+", label: "Software Projects" },
+  { icon: "🛠️", value: "15+", label: "Technologies Mastered" },
+  { icon: "📚", value: "2+", label: "Years of Continuous Learning" },
+  { icon: "🚀", value: "100%", label: "Passion for Innovation" },
 ];
 
 function About() {
@@ -92,15 +92,17 @@ function About() {
           {/* Left — Bio */}
           <div className="space-y-4 text-textDim text-base leading-relaxed">
             <p>
-              Experienced Full-Stack Software Engineer with a strong background
-              in computer science and a keen interest in the development and
-              design of scalable applications.
+              Experienced Full-Stack Software Developer with a solid foundation in 
+              computer science and a passion for designing, developing, and deploying 
+              scalable, high-performance applications. Proficient in building secure and 
+              maintainable software solutions using Python (REST API, FastAPI), 
+              Node.js (Express.js, NestJS), Docker, and cloud technologies.
             </p>
             <p>
-              Skilled in Python (Django Rest Framework, FastAPI), NodeJS
-              (Express, NestJS), Docker, and cloud services. Expert in designing
-              and optimizing RESTful APIs, microservices architectures, and
-              database systems.
+              Experienced in designing and optimizing RESTful APIs, implementing microservices
+               architectures, and developing efficient database solutions. Committed to writing 
+               clean, maintainable code while leveraging modern development practices to deliver 
+               reliable, scalable, and user-focused applications.
             </p>
           </div>
 
@@ -113,12 +115,12 @@ function About() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="flex flex-col items-center gap-1 group cursor-default"
+                  className="flex flex-col items-center gap-1 group cursor-default hover:scale-110 transition-transform duration-200"
                 >
                   <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-8 h-8 group-hover:scale-110 transition-transform duration-200"
+                    className="w-8 h-8 group-hover:scale-125 transition-transform duration-200"
                   />
                   <span className="text-textDim/60 text-xs font-mono text-center leading-tight">
                     {tech.name}
